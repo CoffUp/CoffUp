@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoffUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dateLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7b6-47-NUi">
+                                <rect key="frame" x="262" y="208" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="WLv-rx-ajB">
+                                <rect key="frame" x="0.0" y="20" width="600" height="180"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nameLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMu-GL-aGw">
+                                <rect key="frame" x="258" y="247" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WLv-rx-ajB" secondAttribute="trailing" id="9kk-kL-z3x"/>
+                            <constraint firstItem="PMu-GL-aGw" firstAttribute="centerX" secondItem="7b6-47-NUi" secondAttribute="centerX" id="DpM-K9-2sn"/>
+                            <constraint firstItem="7b6-47-NUi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V2M-UQ-y2n"/>
+                            <constraint firstItem="WLv-rx-ajB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cLf-bD-Y8Y"/>
+                            <constraint firstItem="7b6-47-NUi" firstAttribute="top" secondItem="WLv-rx-ajB" secondAttribute="bottom" constant="8" id="ddg-MB-TmR"/>
+                            <constraint firstItem="PMu-GL-aGw" firstAttribute="top" secondItem="7b6-47-NUi" secondAttribute="bottom" constant="18" id="hhB-2b-3Q0"/>
+                            <constraint firstItem="WLv-rx-ajB" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="tiB-CD-qwk"/>
+                            <constraint firstItem="WLv-rx-ajB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="wty-dK-JV5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="7b6-47-NUi" id="own-wo-bh0"/>
+                        <outlet property="map" destination="WLv-rx-ajB" id="KYH-VR-BII"/>
+                        <outlet property="nameLabel" destination="PMu-GL-aGw" id="0iC-eX-dRw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="427" y="219"/>
+        </scene>
+    </scenes>
+</document>
