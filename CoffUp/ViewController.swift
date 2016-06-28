@@ -17,12 +17,19 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "CoffUp SF"
+        
         let fetcher = EventFetcher()
-        self.dateLabel.text = ""
-        self.nameLabel.text = ""
+        self.dateLabel.text = " "
+        self.nameLabel.text = " "
+        
+        let location = CLLocationCoordinate2DMake(37.752903, -122.448120)
+        let region = MKCoordinateRegionMakeWithDistance(location, 25000, 25000)
+        self.map.setRegion(region, animated: false)
         
         // Uncomment this to add an event a few hours in the future
-//        fetcher.addEvent("4d065736a26854819660c1bd", date: NSDate().dateByAddingTimeInterval(10000))
+        // fetcher.addEvent("4d065736a26854819660c1bd", date: NSDate().dateByAddingTimeInterval(10000))
         
         fetcher.getNextEvent { (event, error) in
             if let error = error {
