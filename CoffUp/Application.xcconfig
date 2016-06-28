@@ -1,0 +1,8 @@
+#include "Shared.xcconfig"
+
+PRODUCT_NAME = CoffUp
+INFOPLIST_FILE = CoffUp/Info.plist
+PRODUCT_BUNDLE_IDENTIFIER = io.thumbworks.CoffUp
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon
+CODE_SIGN_ENTITLEMENTS = CoffUp/CoffUp.entitlements
+CODE_SIGN_IDENTITY[sdk=iphoneos*] = iPhone Developer
