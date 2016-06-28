@@ -1,5 +1,5 @@
-#include "Shared.xcconfig"
 #include "Debug.xcconfig"
+#include "Pods/Target Support Files/Pods-CoffUpTests/Pods-CoffUpTests.debug.xcconfig"
 
 BUNDLE_LOADER = $(TEST_HOST)
 LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/Frameworks

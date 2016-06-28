@@ -1,6 +1,7 @@
-#include "Shared.xcconfig"
+#include "Pods/Target Support Files/Pods-CoffUp/Pods-CoffUp.release.xcconfig"
 
-ONLY_ACTIVE_ARCH = NO
+CLOUDKIT_CUSTOM_SETTING = "apple.com"
+
 DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
 VALIDATE_PRODUCT = YES
 ENABLE_NS_ASSERTIONS = NO
