@@ -12,12 +12,12 @@ import CloudKit
 class EventFetcher {
     
     private func publicDatabase() -> CKDatabase {
-        let container = CKContainer.defaultContainer()
+        let container = CKContainer(identifier: "iCloud.io.thumbworks.CoffUp")
         let publicDatabase = container.publicCloudDatabase
         return publicDatabase
     }
-
-    func addEvent(foursquareID : String, date : NSDate) {
+    
+    func addEvent(foursquareID : String, date : NSDate, completion: (NSError?) -> Void) {
         let dateAsString = NSDate().longFormat()
         
         // Populate a CKRecord
