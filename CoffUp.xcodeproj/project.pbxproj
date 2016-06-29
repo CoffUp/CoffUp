@@ -35,6 +35,7 @@
 		9EC632101D1C4C4700E76B9B /* FoursquareProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6320F1D1C4C4700E76B9B /* FoursquareProxy.swift */; };
 		9EC632121D1C4C9A00E76B9B /* EventFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC632111D1C4C9A00E76B9B /* EventFetcher.swift */; };
 		9EEE9F051D239DE000425FC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EA88AE01D1B4BBC00578652 /* Assets.xcassets */; };
+		9EEE9F071D239F6E00425FC5 /* getVenue.json in Resources */ = {isa = PBXBuildFile; fileRef = 9EEE9F061D239F6E00425FC5 /* getVenue.json */; };
 		AE369901F65326E06E49D3A2 /* Pods_CoffUpdate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E188805A0BD9E8CA9C89A8 /* Pods_CoffUpdate.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +82,7 @@
 		9EA88AF01D1B4BBC00578652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EC6320F1D1C4C4700E76B9B /* FoursquareProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoursquareProxy.swift; path = CoffUp/FoursquareProxy.swift; sourceTree = "<group>"; };
 		9EC632111D1C4C9A00E76B9B /* EventFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventFetcher.swift; path = CoffUp/EventFetcher.swift; sourceTree = "<group>"; };
+		9EEE9F061D239F6E00425FC5 /* getVenue.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getVenue.json; sourceTree = "<group>"; };
 		A70E9C553279C2B682674D25 /* Pods_CoffUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3B5CAAAE7E7A40988DADDD4 /* Pods-CoffUpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffUpTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoffUpTests/Pods-CoffUpTests.release.xcconfig"; sourceTree = "<group>"; };
 		EA93D632BF9D5072E0C8CDD1 /* Pods_CoffUpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffUpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,6 +200,7 @@
 			children = (
 				9EA88AEE1D1B4BBC00578652 /* CoffUpTests.swift */,
 				9EA88AF01D1B4BBC00578652 /* Info.plist */,
+				9EEE9F061D239F6E00425FC5 /* getVenue.json */,
 			);
 			path = CoffUpTests;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9EEE9F071D239F6E00425FC5 /* getVenue.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
