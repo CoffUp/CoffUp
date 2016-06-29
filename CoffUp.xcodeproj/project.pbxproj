@@ -13,6 +13,8 @@
 		9E6285941D1BC6E900AE3B96 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6285931D1BC6E900AE3B96 /* Venue.swift */; };
 		9E6285961D1BC72C00AE3B96 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6285951D1BC72C00AE3B96 /* Event.swift */; };
 		9E62859C1D1C4A9800AE3B96 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E62859B1D1C4A9800AE3B96 /* DateHelper.swift */; };
+		9E73C7F81D23943C00CCF417 /* RequestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E73C7F71D23943C00CCF417 /* RequestResult.swift */; };
+		9E73C7F91D23943C00CCF417 /* RequestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E73C7F71D23943C00CCF417 /* RequestResult.swift */; };
 		9E892D871D22008400F63153 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E892D861D22008400F63153 /* AppDelegate.swift */; };
 		9E892D891D22008400F63153 /* CoffUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E892D881D22008400F63153 /* CoffUpdateViewController.swift */; };
 		9E892D8C1D22008400F63153 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E892D8A1D22008400F63153 /* Main.storyboard */; };
@@ -58,6 +60,7 @@
 		9E6285931D1BC6E900AE3B96 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Venue.swift; path = CoffUp/Venue.swift; sourceTree = "<group>"; };
 		9E6285951D1BC72C00AE3B96 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = CoffUp/Event.swift; sourceTree = "<group>"; };
 		9E62859B1D1C4A9800AE3B96 /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateHelper.swift; path = CoffUp/DateHelper.swift; sourceTree = "<group>"; };
+		9E73C7F71D23943C00CCF417 /* RequestResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestResult.swift; path = CoffUp/RequestResult.swift; sourceTree = "<group>"; };
 		9E892D841D22008400F63153 /* CoffUpdate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffUpdate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E892D861D22008400F63153 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E892D881D22008400F63153 /* CoffUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffUpdateViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +147,7 @@
 		9E892D971D22042600F63153 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				9E73C7F71D23943C00CCF417 /* RequestResult.swift */,
 				9EC6320F1D1C4C4700E76B9B /* FoursquareProxy.swift */,
 				9E6285931D1BC6E900AE3B96 /* Venue.swift */,
 				9EC632111D1C4C9A00E76B9B /* EventFetcher.swift */,
@@ -508,6 +512,7 @@
 				9E892D9C1D223B6400F63153 /* DateHelper.swift in Sources */,
 				9E892D9B1D220D4700F63153 /* EventFetcher.swift in Sources */,
 				9E892D9D1D223B8300F63153 /* Event.swift in Sources */,
+				9E73C7F91D23943C00CCF417 /* RequestResult.swift in Sources */,
 				9E892D871D22008400F63153 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -519,6 +524,7 @@
 				9E62859C1D1C4A9800AE3B96 /* DateHelper.swift in Sources */,
 				9E6285941D1BC6E900AE3B96 /* Venue.swift in Sources */,
 				9EA88AD91D1B4BBC00578652 /* ViewController.swift in Sources */,
+				9E73C7F81D23943C00CCF417 /* RequestResult.swift in Sources */,
 				9EA88ADF1D1B4BBC00578652 /* CoffUp.xcdatamodeld in Sources */,
 				9EC632121D1C4C9A00E76B9B /* EventFetcher.swift in Sources */,
 				9E6285961D1BC72C00AE3B96 /* Event.swift in Sources */,

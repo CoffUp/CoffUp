@@ -22,18 +22,21 @@ class ViewController: UIViewController {
         let fetcher = EventFetcher()
         self.dateLabel.text = ""
         self.nameLabel.text = ""
-        fetcher.getNextEvent { (event, error) in
-            if let error = error {
+        fetcher.getNextEvent { (result) in
+            switch result {
+            case .Failure(let error):
                 // TODO obviously handle the error cases
                 print("we got an error", error)
-            }
-            else if let event = event {
-                               let proxy = FoursquareProxy.init()
-                proxy.getVenueWith(event.foursquareID, completion: { (venue, error) in
-                    if let error = error {
+                
+            case .Success(let event):
+                let proxy = FoursquareProxy.init()
+                proxy.getVenueWith(event.foursquareID, completion: { (result) in
+                    switch result {
+                    case .Failure:
                         // TODO obviously handle the error cases
-                        print("we got an error", error)
-                    } else if let venue = venue {
+                        print("we got an error", result)
+                        
+                    case .Success(let venue):
                         print("venue is ", venue)
                         dispatch_async(dispatch_get_main_queue(), {
                             self.dateLabel.text = event.date.shortFormat()
@@ -43,6 +46,7 @@ class ViewController: UIViewController {
                         })
                     }
                 })
+                
             }
         }
     }

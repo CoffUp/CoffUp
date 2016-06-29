@@ -15,10 +15,11 @@ class CoffUpdateViewController: UIViewController {
     @IBOutlet weak var datePicker: UIDatePicker!
     
     var proxy: FoursquareProxy?
-    var venues: [Venue]?
+    var venues = [Venue]()
     
     @IBAction func searchButtonTapped(sender: AnyObject) {
         print(textField?.text)
+        textField?.resignFirstResponder()
         guard let text = textField?.text else {
             return
         }
@@ -27,14 +28,11 @@ class CoffUpdateViewController: UIViewController {
         }
         
         // Just trying out doing a search.
-        proxy?.searchVenueWithString(text, completion: { (venues, error) in
-            if let error = error {
-                // TODO obviously handle the error cases
-                print("error when searching", error)
-            }
-            if let venues = venues {
-                // TODO Probably show the list of results and add a timestamp (Some Wednesday at 8:30AM in the future) to the selection, then send it to the Clouds
-                print("Venues ", venues)
+        proxy?.searchVenueWithString(text, completion: { (results) in
+            switch results {
+            case .Failure:
+                print("error when searching", results)
+            case .Success(let venues):
                 self.venues = venues
                 dispatch_async(dispatch_get_main_queue(), {
                     self.tableView.reloadData()
@@ -56,17 +54,18 @@ class CoffUpdateViewController: UIViewController {
             print("Must make a venue selection")
             return
         }
-        guard let venue = venues![selectedCell.row] as Venue? else {
+        guard let venue = venues[selectedCell.row] as Venue? else {
             print("Must have a venue for the selected cell")
             return
         }
         
         print("Attempting to add venue", venue.foursquareID, "date", datePicker.date)
-        EventFetcher().addEvent(venue.foursquareID, date: datePicker.date) { (error) in
+        EventFetcher().addEvent(venue.foursquareID, date: datePicker.date) { (result) in
             dispatch_async(dispatch_get_main_queue(), {
-                if let error = error {
-                   self.showAlertWith(error.localizedDescription)
-                } else {
+                switch result {
+                case .Failure(let error):
+                    self.showAlertWith(error.localizedDescription)
+                case .Success():
                     self.showAlertWith("Successfully added an event")
                 }
             })
@@ -76,7 +75,7 @@ class CoffUpdateViewController: UIViewController {
 
 extension CoffUpdateViewController: UITableViewDataSource {
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return venues?.count ?? 0
+        return venues.count ?? 0
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -84,7 +83,7 @@ extension CoffUpdateViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         
-        if let label = cell.textLabel, subLabel = cell.detailTextLabel, venue = venues![indexPath.row] as Venue? {
+        if let label = cell.textLabel, subLabel = cell.detailTextLabel, venue = venues[indexPath.row] as Venue? {
             label.text = venue.name
             subLabel.text = venue.crossStreet
         }

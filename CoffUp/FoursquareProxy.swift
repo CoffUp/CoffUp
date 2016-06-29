@@ -24,25 +24,25 @@ class FoursquareProxy {
         session = Session.sharedSession()
     }
     
-    func getVenueWith(identifier: String, completion: (Venue?, NSError?) -> Void) {
+    func getVenueWith(identifier: String, completion: (RequestResult<Venue>) -> Void) {
         let venueTask = session.venues.get(identifier) { (result) in
             if let error = result.error {
-                completion(nil, error)
+                completion(RequestResult.Failure(error))
                 return
             }
             
             // Get the relevant Venue data from the response
             guard let venue = Venue(venue: result.response!["venue"] as! [String: AnyObject]) else {
                 let error = self.errorWithCode(9999, localizedString: "Error parsing JSON")
-                completion(nil, error)
+                completion(RequestResult.Failure(error))
                 return
             }
-            completion(venue, nil)
+            completion(RequestResult.Success(venue))
         }
         venueTask.start()
     }
     
-    func searchVenueWithString(query: String, completion: ([Venue]?, NSError?) -> Void) {
+    func searchVenueWithString(query: String, completion: (RequestResult<[Venue]>) -> Void) {
         var parameters = [Parameter.query:query]
         // TODO pretty hard coded here
         parameters += [Parameter.near:"San Francisco, CA"]
@@ -50,13 +50,13 @@ class FoursquareProxy {
             // Example search results https://api.foursquare.com/v2/venues/search?near=San%20Francisco%20CA&query=Blue%20Bottle&oauth_token=3X1I0CULTT2GPRL10UHVIFNJUVNWLAPS5CZYP0OJXX5RV4YW&v=20160623
             guard let responseDict = result.response else {
                 let error = self.errorWithCode(9998, localizedString: "Invalid JSON, did not include an array of Venues")
-                completion(nil, error)
+                completion(RequestResult.Failure(error))
                 return
             }
 
             guard let venuesArray = responseDict["venues"] as! [JSONParameters]? else {
                 let error = self.errorWithCode(9997, localizedString: "Invalid JSON, did not include venue objects")
-                completion(nil, error)
+                completion(RequestResult.Failure(error))
                 return
             }
             
@@ -66,10 +66,10 @@ class FoursquareProxy {
                     ret.append(venue)
                 } else {
                     let error = self.errorWithCode(9999, localizedString: "Error parsing JSON")
-                    completion(nil, error)
+                    completion(RequestResult.Failure(error))
                 }
             }
-            completion(ret, nil)
+            completion(RequestResult.Success(ret))
         }
         searchTask.start()
     }
