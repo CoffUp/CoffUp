@@ -18,7 +18,6 @@
 		9E892D871D22008400F63153 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E892D861D22008400F63153 /* AppDelegate.swift */; };
 		9E892D891D22008400F63153 /* CoffUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E892D881D22008400F63153 /* CoffUpdateViewController.swift */; };
 		9E892D8C1D22008400F63153 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E892D8A1D22008400F63153 /* Main.storyboard */; };
-		9E892D8E1D22008400F63153 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E892D8D1D22008400F63153 /* Assets.xcassets */; };
 		9E892D911D22008400F63153 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E892D8F1D22008400F63153 /* LaunchScreen.storyboard */; };
 		9E892D961D2203D900F63153 /* FoursquareProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6320F1D1C4C4700E76B9B /* FoursquareProxy.swift */; };
 		9E892D981D22043A00F63153 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6285931D1BC6E900AE3B96 /* Venue.swift */; };
@@ -35,6 +34,7 @@
 		9EA88AEF1D1B4BBC00578652 /* CoffUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA88AEE1D1B4BBC00578652 /* CoffUpTests.swift */; };
 		9EC632101D1C4C4700E76B9B /* FoursquareProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6320F1D1C4C4700E76B9B /* FoursquareProxy.swift */; };
 		9EC632121D1C4C9A00E76B9B /* EventFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC632111D1C4C9A00E76B9B /* EventFetcher.swift */; };
+		9EEE9F051D239DE000425FC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EA88AE01D1B4BBC00578652 /* Assets.xcassets */; };
 		AE369901F65326E06E49D3A2 /* Pods_CoffUpdate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E188805A0BD9E8CA9C89A8 /* Pods_CoffUpdate.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +65,6 @@
 		9E892D861D22008400F63153 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E892D881D22008400F63153 /* CoffUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffUpdateViewController.swift; sourceTree = "<group>"; };
 		9E892D8B1D22008400F63153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9E892D8D1D22008400F63153 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E892D901D22008400F63153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E892D921D22008400F63153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E892D9E1D223D5800F63153 /* CoffUpdate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CoffUpdate.entitlements; sourceTree = "<group>"; };
@@ -137,7 +136,6 @@
 				9E892D861D22008400F63153 /* AppDelegate.swift */,
 				9E892D881D22008400F63153 /* CoffUpdateViewController.swift */,
 				9E892D8A1D22008400F63153 /* Main.storyboard */,
-				9E892D8D1D22008400F63153 /* Assets.xcassets */,
 				9E892D8F1D22008400F63153 /* LaunchScreen.storyboard */,
 				9E892D921D22008400F63153 /* Info.plist */,
 			);
@@ -339,7 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E892D911D22008400F63153 /* LaunchScreen.storyboard in Resources */,
-				9E892D8E1D22008400F63153 /* Assets.xcassets in Resources */,
+				9EEE9F051D239DE000425FC5 /* Assets.xcassets in Resources */,
 				9E892D8C1D22008400F63153 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
