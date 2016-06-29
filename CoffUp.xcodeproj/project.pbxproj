@@ -13,6 +13,18 @@
 		9E6285941D1BC6E900AE3B96 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6285931D1BC6E900AE3B96 /* Venue.swift */; };
 		9E6285961D1BC72C00AE3B96 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6285951D1BC72C00AE3B96 /* Event.swift */; };
 		9E62859C1D1C4A9800AE3B96 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E62859B1D1C4A9800AE3B96 /* DateHelper.swift */; };
+		9E73C7F81D23943C00CCF417 /* RequestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E73C7F71D23943C00CCF417 /* RequestResult.swift */; };
+		9E73C7F91D23943C00CCF417 /* RequestResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E73C7F71D23943C00CCF417 /* RequestResult.swift */; };
+		9E892D871D22008400F63153 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E892D861D22008400F63153 /* AppDelegate.swift */; };
+		9E892D891D22008400F63153 /* CoffUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E892D881D22008400F63153 /* CoffUpdateViewController.swift */; };
+		9E892D8C1D22008400F63153 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E892D8A1D22008400F63153 /* Main.storyboard */; };
+		9E892D911D22008400F63153 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E892D8F1D22008400F63153 /* LaunchScreen.storyboard */; };
+		9E892D961D2203D900F63153 /* FoursquareProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6320F1D1C4C4700E76B9B /* FoursquareProxy.swift */; };
+		9E892D981D22043A00F63153 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6285931D1BC6E900AE3B96 /* Venue.swift */; };
+		9E892D9B1D220D4700F63153 /* EventFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC632111D1C4C9A00E76B9B /* EventFetcher.swift */; };
+		9E892D9C1D223B6400F63153 /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E62859B1D1C4A9800AE3B96 /* DateHelper.swift */; };
+		9E892D9D1D223B8300F63153 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6285951D1BC72C00AE3B96 /* Event.swift */; };
+		9E892D9F1D223D5C00F63153 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6285911D1BACC200AE3B96 /* CloudKit.framework */; };
 		9EA88AD71D1B4BBC00578652 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA88AD61D1B4BBC00578652 /* AppDelegate.swift */; };
 		9EA88AD91D1B4BBC00578652 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA88AD81D1B4BBC00578652 /* ViewController.swift */; };
 		9EA88ADC1D1B4BBC00578652 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EA88ADA1D1B4BBC00578652 /* Main.storyboard */; };
@@ -22,6 +34,8 @@
 		9EA88AEF1D1B4BBC00578652 /* CoffUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA88AEE1D1B4BBC00578652 /* CoffUpTests.swift */; };
 		9EC632101D1C4C4700E76B9B /* FoursquareProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC6320F1D1C4C4700E76B9B /* FoursquareProxy.swift */; };
 		9EC632121D1C4C9A00E76B9B /* EventFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EC632111D1C4C9A00E76B9B /* EventFetcher.swift */; };
+		9EEE9F051D239DE000425FC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EA88AE01D1B4BBC00578652 /* Assets.xcassets */; };
+		AE369901F65326E06E49D3A2 /* Pods_CoffUpdate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59E188805A0BD9E8CA9C89A8 /* Pods_CoffUpdate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,14 +49,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		21B4B8538E2ED51F36096320 /* Pods-CoffUpdate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffUpdate.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoffUpdate/Pods-CoffUpdate.release.xcconfig"; sourceTree = "<group>"; };
 		3104F0AFBB9EB980C0CB2EDF /* Pods-CoffUpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffUpTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoffUpTests/Pods-CoffUpTests.debug.xcconfig"; sourceTree = "<group>"; };
+		59E188805A0BD9E8CA9C89A8 /* Pods_CoffUpdate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffUpdate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6362F259FBCA65DC147D78CF /* Pods-CoffUpdate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffUpdate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoffUpdate/Pods-CoffUpdate.debug.xcconfig"; sourceTree = "<group>"; };
 		6D7C3FEFE066362C7F766D38 /* Pods-CoffUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoffUp/Pods-CoffUp.release.xcconfig"; sourceTree = "<group>"; };
 		75D659B273870B7D84D92459 /* Pods-CoffUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoffUp/Pods-CoffUp.debug.xcconfig"; sourceTree = "<group>"; };
 		9E6285901D1BACBE00AE3B96 /* CoffUp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CoffUp.entitlements; sourceTree = "<group>"; };
 		9E6285911D1BACC200AE3B96 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
-		9E6285931D1BC6E900AE3B96 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
-		9E6285951D1BC72C00AE3B96 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		9E62859B1D1C4A9800AE3B96 /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		9E6285931D1BC6E900AE3B96 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Venue.swift; path = CoffUp/Venue.swift; sourceTree = "<group>"; };
+		9E6285951D1BC72C00AE3B96 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = CoffUp/Event.swift; sourceTree = "<group>"; };
+		9E62859B1D1C4A9800AE3B96 /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateHelper.swift; path = CoffUp/DateHelper.swift; sourceTree = "<group>"; };
+		9E73C7F71D23943C00CCF417 /* RequestResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RequestResult.swift; path = CoffUp/RequestResult.swift; sourceTree = "<group>"; };
+		9E892D841D22008400F63153 /* CoffUpdate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffUpdate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E892D861D22008400F63153 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9E892D881D22008400F63153 /* CoffUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffUpdateViewController.swift; sourceTree = "<group>"; };
+		9E892D8B1D22008400F63153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9E892D901D22008400F63153 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9E892D921D22008400F63153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E892D9E1D223D5800F63153 /* CoffUpdate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CoffUpdate.entitlements; sourceTree = "<group>"; };
 		9EA88AD31D1B4BBC00578652 /* CoffUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EA88AD61D1B4BBC00578652 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EA88AD81D1B4BBC00578652 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,14 +79,23 @@
 		9EA88AEA1D1B4BBC00578652 /* CoffUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoffUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EA88AEE1D1B4BBC00578652 /* CoffUpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffUpTests.swift; sourceTree = "<group>"; };
 		9EA88AF01D1B4BBC00578652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9EC6320F1D1C4C4700E76B9B /* FoursquareProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareProxy.swift; sourceTree = "<group>"; };
-		9EC632111D1C4C9A00E76B9B /* EventFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventFetcher.swift; sourceTree = "<group>"; };
+		9EC6320F1D1C4C4700E76B9B /* FoursquareProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoursquareProxy.swift; path = CoffUp/FoursquareProxy.swift; sourceTree = "<group>"; };
+		9EC632111D1C4C9A00E76B9B /* EventFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventFetcher.swift; path = CoffUp/EventFetcher.swift; sourceTree = "<group>"; };
 		A70E9C553279C2B682674D25 /* Pods_CoffUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3B5CAAAE7E7A40988DADDD4 /* Pods-CoffUpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffUpTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoffUpTests/Pods-CoffUpTests.release.xcconfig"; sourceTree = "<group>"; };
 		EA93D632BF9D5072E0C8CDD1 /* Pods_CoffUpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoffUpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9E892D811D22008400F63153 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE369901F65326E06E49D3A2 /* Pods_CoffUpdate.framework in Frameworks */,
+				9E892D9F1D223D5C00F63153 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9EA88AD01D1B4BBC00578652 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -89,15 +123,45 @@
 				6D7C3FEFE066362C7F766D38 /* Pods-CoffUp.release.xcconfig */,
 				3104F0AFBB9EB980C0CB2EDF /* Pods-CoffUpTests.debug.xcconfig */,
 				D3B5CAAAE7E7A40988DADDD4 /* Pods-CoffUpTests.release.xcconfig */,
+				6362F259FBCA65DC147D78CF /* Pods-CoffUpdate.debug.xcconfig */,
+				21B4B8538E2ED51F36096320 /* Pods-CoffUpdate.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		9E892D851D22008400F63153 /* CoffUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				9E892D9E1D223D5800F63153 /* CoffUpdate.entitlements */,
+				9E892D861D22008400F63153 /* AppDelegate.swift */,
+				9E892D881D22008400F63153 /* CoffUpdateViewController.swift */,
+				9E892D8A1D22008400F63153 /* Main.storyboard */,
+				9E892D8F1D22008400F63153 /* LaunchScreen.storyboard */,
+				9E892D921D22008400F63153 /* Info.plist */,
+			);
+			path = CoffUpdate;
+			sourceTree = "<group>";
+		};
+		9E892D971D22042600F63153 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9E73C7F71D23943C00CCF417 /* RequestResult.swift */,
+				9EC6320F1D1C4C4700E76B9B /* FoursquareProxy.swift */,
+				9E6285931D1BC6E900AE3B96 /* Venue.swift */,
+				9EC632111D1C4C9A00E76B9B /* EventFetcher.swift */,
+				9E6285951D1BC72C00AE3B96 /* Event.swift */,
+				9E62859B1D1C4A9800AE3B96 /* DateHelper.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 		9EA88ACA1D1B4BBC00578652 = {
 			isa = PBXGroup;
 			children = (
+				9E892D971D22042600F63153 /* Common */,
 				9EA88AD51D1B4BBC00578652 /* CoffUp */,
 				9EA88AED1D1B4BBC00578652 /* CoffUpTests */,
+				9E892D851D22008400F63153 /* CoffUpdate */,
 				9EA88AD41D1B4BBC00578652 /* Products */,
 				4D0B73E671873C924CB1EE44 /* Pods */,
 				F6C0244ED7B8F2D2EA5E65F3 /* Frameworks */,
@@ -109,6 +173,7 @@
 			children = (
 				9EA88AD31D1B4BBC00578652 /* CoffUp.app */,
 				9EA88AEA1D1B4BBC00578652 /* CoffUpTests.xctest */,
+				9E892D841D22008400F63153 /* CoffUpdate.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,11 +189,6 @@
 				9EA88AE21D1B4BBC00578652 /* LaunchScreen.storyboard */,
 				9EA88AE51D1B4BBC00578652 /* Info.plist */,
 				9EA88ADD1D1B4BBC00578652 /* CoffUp.xcdatamodeld */,
-				9E6285951D1BC72C00AE3B96 /* Event.swift */,
-				9E6285931D1BC6E900AE3B96 /* Venue.swift */,
-				9EC632111D1C4C9A00E76B9B /* EventFetcher.swift */,
-				9EC6320F1D1C4C4700E76B9B /* FoursquareProxy.swift */,
-				9E62859B1D1C4A9800AE3B96 /* DateHelper.swift */,
 			);
 			path = CoffUp;
 			sourceTree = "<group>";
@@ -148,6 +208,7 @@
 				9E6285911D1BACC200AE3B96 /* CloudKit.framework */,
 				A70E9C553279C2B682674D25 /* Pods_CoffUp.framework */,
 				EA93D632BF9D5072E0C8CDD1 /* Pods_CoffUpTests.framework */,
+				59E188805A0BD9E8CA9C89A8 /* Pods_CoffUpdate.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,6 +216,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9E892D831D22008400F63153 /* CoffUpdate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E892D951D22008400F63153 /* Build configuration list for PBXNativeTarget "CoffUpdate" */;
+			buildPhases = (
+				4627B2CBB81FD2AE8FB915A2 /* [CP] Check Pods Manifest.lock */,
+				9E892D801D22008400F63153 /* Sources */,
+				9E892D811D22008400F63153 /* Frameworks */,
+				9E892D821D22008400F63153 /* Resources */,
+				994734515EC6ACA675650055 /* [CP] Embed Pods Frameworks */,
+				9026AC63CA0B1E5485E3F136 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoffUpdate;
+			productName = CoffUpdate;
+			productReference = 9E892D841D22008400F63153 /* CoffUpdate.app */;
+			productType = "com.apple.product-type.application";
+		};
 		9EA88AD21D1B4BBC00578652 /* CoffUp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9EA88AF31D1B4BBC00578652 /* Build configuration list for PBXNativeTarget "CoffUp" */;
@@ -206,6 +287,15 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Thumbworks;
 				TargetAttributes = {
+					9E892D831D22008400F63153 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = F4WTN36U2F;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
 					9EA88AD21D1B4BBC00578652 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = F4WTN36U2F;
@@ -235,12 +325,23 @@
 			projectRoot = "";
 			targets = (
 				9EA88AD21D1B4BBC00578652 /* CoffUp */,
+				9E892D831D22008400F63153 /* CoffUpdate */,
 				9EA88AE91D1B4BBC00578652 /* CoffUpTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9E892D821D22008400F63153 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E892D911D22008400F63153 /* LaunchScreen.storyboard in Resources */,
+				9EEE9F051D239DE000425FC5 /* Assets.xcassets in Resources */,
+				9E892D8C1D22008400F63153 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9EA88AD11D1B4BBC00578652 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -262,6 +363,21 @@
 
 /* Begin PBXShellScriptBuildPhase section */
 		33E7A15CEB8A320CD429760F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4627B2CBB81FD2AE8FB915A2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -304,6 +420,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoffUp/Pods-CoffUp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9026AC63CA0B1E5485E3F136 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoffUpdate/Pods-CoffUpdate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		994734515EC6ACA675650055 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoffUpdate/Pods-CoffUpdate-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B7B7731B51328A6DCE737E07 /* [CP] Embed Pods Frameworks */ = {
@@ -354,6 +500,21 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9E892D801D22008400F63153 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E892D961D2203D900F63153 /* FoursquareProxy.swift in Sources */,
+				9E892D981D22043A00F63153 /* Venue.swift in Sources */,
+				9E892D891D22008400F63153 /* CoffUpdateViewController.swift in Sources */,
+				9E892D9C1D223B6400F63153 /* DateHelper.swift in Sources */,
+				9E892D9B1D220D4700F63153 /* EventFetcher.swift in Sources */,
+				9E892D9D1D223B8300F63153 /* Event.swift in Sources */,
+				9E73C7F91D23943C00CCF417 /* RequestResult.swift in Sources */,
+				9E892D871D22008400F63153 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9EA88ACF1D1B4BBC00578652 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -361,6 +522,7 @@
 				9E62859C1D1C4A9800AE3B96 /* DateHelper.swift in Sources */,
 				9E6285941D1BC6E900AE3B96 /* Venue.swift in Sources */,
 				9EA88AD91D1B4BBC00578652 /* ViewController.swift in Sources */,
+				9E73C7F81D23943C00CCF417 /* RequestResult.swift in Sources */,
 				9EA88ADF1D1B4BBC00578652 /* CoffUp.xcdatamodeld in Sources */,
 				9EC632121D1C4C9A00E76B9B /* EventFetcher.swift in Sources */,
 				9E6285961D1BC72C00AE3B96 /* Event.swift in Sources */,
@@ -388,6 +550,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		9E892D8A1D22008400F63153 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E892D8B1D22008400F63153 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9E892D8F1D22008400F63153 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E892D901D22008400F63153 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		9EA88ADA1D1B4BBC00578652 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -407,6 +585,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9E892D931D22008400F63153 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6362F259FBCA65DC147D78CF /* Pods-CoffUpdate.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CoffUpdate/CoffUpdate.entitlements;
+				INFOPLIST_FILE = CoffUpdate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.thumbworks.CoffUpdate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9E892D941D22008400F63153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21B4B8538E2ED51F36096320 /* Pods-CoffUpdate.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CoffUpdate/CoffUpdate.entitlements;
+				INFOPLIST_FILE = CoffUpdate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.thumbworks.CoffUpdate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		9EA88AF11D1B4BBC00578652 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -547,6 +751,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9E892D951D22008400F63153 /* Build configuration list for PBXNativeTarget "CoffUpdate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E892D931D22008400F63153 /* Debug */,
+				9E892D941D22008400F63153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9EA88ACE1D1B4BBC00578652 /* Build configuration list for PBXProject "CoffUp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -11,13 +11,27 @@ import MapKit
 
 class Venue: NSObject, MKAnnotation  {
     let name: String
-    let imageURL: NSURL?
-    var coordinate: CLLocationCoordinate2D
-
-    init(venueName: String, latitude: Double, longitude: Double, imageURLString: String) {
+    let coordinate: CLLocationCoordinate2D
+    let foursquareID: String
+    let crossStreet: String?
+    init(foursquareID: String, venueName: String, latitude: Double, longitude: Double, crossStreet:String?) {
         coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-        name = venueName
-        imageURL = NSURL(string: imageURLString)
+        self.name = venueName
+        self.foursquareID = foursquareID
+        self.crossStreet = crossStreet
     }
+}
 
+extension Venue {
+    convenience init!(venue: [String: AnyObject]) {
+        guard let name = venue["name"] as! String?,
+        lat = venue["location"]!["lat"] as! Double?,
+        lon = venue["location"]!["lng"] as! Double?,
+        foursquareID = venue["id"] as! String? else {
+            return nil
+        }
+        // The optional yet helpful cross street
+        let cross = venue["location"]!["crossStreet"] as! String?
+        self.init(foursquareID: foursquareID, venueName: name, latitude: lat, longitude: lon, crossStreet: cross)
+    }
 }

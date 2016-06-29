@@ -7,6 +7,9 @@ pod 'QuadratTouch', '>= 1.0'
 target 'CoffUp' do
 end
 
+target 'CoffUpdate' do
+end
+
 target 'CoffUpTests' do
 
 end
