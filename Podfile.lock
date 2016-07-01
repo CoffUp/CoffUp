@@ -1,12 +1,23 @@
 PODS:
+  - Mockingjay (1.2.2):
+    - Mockingjay/Core (= 1.2.2)
+    - Mockingjay/XCTest (= 1.2.2)
+  - Mockingjay/Core (1.2.2):
+    - URITemplate (~> 1.3)
+  - Mockingjay/XCTest (1.2.2):
+    - Mockingjay/Core
   - QuadratTouch (1.1.1)
+  - URITemplate (1.3.1)
 
 DEPENDENCIES:
+  - Mockingjay
   - QuadratTouch (>= 1.0)
 
 SPEC CHECKSUMS:
+  Mockingjay: 5de65f14108473afc6727e05df9a3ecc9cef8562
   QuadratTouch: 296d83c63a4328f6f40af9fc728fe24f0e3b00d4
+  URITemplate: 398a48d6559e23b77bd41176b675b017ad1fc959
 
-PODFILE CHECKSUM: ea8864a987c532dc5ffce60681a4eb389da7ef61
+PODFILE CHECKSUM: c45de3412afb74bbe17033698c3a297b155753c8
 
 COCOAPODS: 1.0.1

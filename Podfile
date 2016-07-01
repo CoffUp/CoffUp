@@ -11,6 +11,7 @@ target 'CoffUpdate' do
 end
 
 target 'CoffUpTests' do
+pod 'Mockingjay'
 
 end
 
