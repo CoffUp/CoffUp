@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		039F201271FA6592FEEE9303 /* Pods_CoffUpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA93D632BF9D5072E0C8CDD1 /* Pods_CoffUpTests.framework */; };
 		5C5601159748B5B3CE393392 /* Pods_CoffUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A70E9C553279C2B682674D25 /* Pods_CoffUp.framework */; };
+		9E3827BD1D249A93007D9E87 /* searchVenues.json in Resources */ = {isa = PBXBuildFile; fileRef = 9E3827BC1D249A93007D9E87 /* searchVenues.json */; };
 		9E6285921D1BACC200AE3B96 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6285911D1BACC200AE3B96 /* CloudKit.framework */; };
 		9E6285941D1BC6E900AE3B96 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6285931D1BC6E900AE3B96 /* Venue.swift */; };
 		9E6285961D1BC72C00AE3B96 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E6285951D1BC72C00AE3B96 /* Event.swift */; };
@@ -56,6 +57,7 @@
 		6362F259FBCA65DC147D78CF /* Pods-CoffUpdate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffUpdate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoffUpdate/Pods-CoffUpdate.debug.xcconfig"; sourceTree = "<group>"; };
 		6D7C3FEFE066362C7F766D38 /* Pods-CoffUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoffUp/Pods-CoffUp.release.xcconfig"; sourceTree = "<group>"; };
 		75D659B273870B7D84D92459 /* Pods-CoffUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoffUp/Pods-CoffUp.debug.xcconfig"; sourceTree = "<group>"; };
+		9E3827BC1D249A93007D9E87 /* searchVenues.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = searchVenues.json; sourceTree = "<group>"; };
 		9E6285901D1BACBE00AE3B96 /* CoffUp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CoffUp.entitlements; sourceTree = "<group>"; };
 		9E6285911D1BACC200AE3B96 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		9E6285931D1BC6E900AE3B96 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Venue.swift; path = CoffUp/Venue.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				9EA88AEE1D1B4BBC00578652 /* CoffUpTests.swift */,
 				9EA88AF01D1B4BBC00578652 /* Info.plist */,
 				9EEE9F061D239F6E00425FC5 /* getVenue.json */,
+				9E3827BC1D249A93007D9E87 /* searchVenues.json */,
 			);
 			path = CoffUpTests;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EEE9F071D239F6E00425FC5 /* getVenue.json in Resources */,
+				9E3827BD1D249A93007D9E87 /* searchVenues.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

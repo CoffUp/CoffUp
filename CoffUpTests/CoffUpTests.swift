@@ -11,13 +11,29 @@ import Mockingjay
 
 @testable import CoffUp
 
-class CoffUpTests: XCTestCase {
+extension CoffUpTests {
+    func searchMatcher(request: NSURLRequest) -> Bool {
+        return (request.URL?.absoluteString.containsString("testsearchstring"))!
+    }
     
+    func clintonMatcher(request: NSURLRequest) -> Bool {
+        return (request.URL?.absoluteString.containsString("clintonBakery"))!
+    }
+}
+
+class CoffUpTests: XCTestCase {
+    let foursquare = FoursquareProxy()
+
     override func setUp() {
         super.setUp()
-        let path = NSBundle(forClass: self.dynamicType).pathForResource("getVenue", ofType: "json")!
-        let data = NSData(contentsOfFile: path)!
-        stub(clintonMatcher, builder: jsonData(data))
+        
+        let searchPath = NSBundle(forClass: self.dynamicType).pathForResource("searchVenues", ofType: "json")!
+        let searchData = NSData(contentsOfFile: searchPath)!
+        stub(searchMatcher, builder: jsonData(searchData))
+        
+        let venuePath = NSBundle(forClass: self.dynamicType).pathForResource("getVenue", ofType: "json")!
+        let venueData = NSData(contentsOfFile: venuePath)!
+        stub(clintonMatcher, builder: jsonData(venueData))
     }
 
     override func tearDown() {
@@ -25,13 +41,8 @@ class CoffUpTests: XCTestCase {
         super.tearDown()
     }
     
-    func clintonMatcher(request:NSURLRequest) -> Bool {
-        return (request.URL?.absoluteString.containsString("clintonBakery"))!
-    }
-    
     func testParseVenueFetch() {
         let expectation = expectationWithDescription("getVenue expectation")
-        let foursquare = FoursquareProxy()
         foursquare.getVenueWith("clintonBakery") { (result) in
             print(result)
             switch result {
@@ -47,10 +58,26 @@ class CoffUpTests: XCTestCase {
             expectation.fulfill()
         }
         
-        print("let's wait")
         self.waitForExpectationsWithTimeout(10) { (error) in
             print("error is ", error)
         }
-        print("we got it")
     }
+    
+//    func testParseVenueSearch() {
+//        let expectation = expectationWithDescription("searchVenue expectation")
+//        foursquare.searchVenueWithString("testsearchstring") { (result) in
+//            switch result {
+//            case .Failure(_):
+//                XCTFail()
+//            case .Success(let venues):
+//                XCTAssertEqual(venues.count, 30)
+//                XCTAssertEqual(venues[0].name, "Blue Bottle Coffee")
+//                XCTAssertEqual(venues[0].foursquareID, "43d3901ef964a5201f2e1fe3")
+//            }
+//            expectation.fulfill()
+//        }
+//        self.waitForExpectationsWithTimeout(1000) { (error) in
+//            print("error is ", error)
+//        }
+//    }
 }
