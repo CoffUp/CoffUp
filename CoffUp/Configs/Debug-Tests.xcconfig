@@ -1,0 +1,9 @@
+#include "Debug.xcconfig"
+#include "Pods/Target Support Files/Pods-CoffUpTests/Pods-CoffUpTests.debug.xcconfig"
+
+BUNDLE_LOADER = $(TEST_HOST)
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/Frameworks @loader_path/Frameworks
+INFOPLIST_FILE = CoffUpTests/Info.plist
+PRODUCT_BUNDLE_IDENTIFIER = io.thumbworks.CoffUpTests
+PRODUCT_NAME = $(TARGET_NAME)
+TEST_HOST = $(BUILT_PRODUCTS_DIR)/CoffUp.app/CoffUp

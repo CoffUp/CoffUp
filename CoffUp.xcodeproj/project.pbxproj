@@ -35,6 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26EF51981D2D6655004E114B /* Application.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Application.xcconfig; path = Configs/Application.xcconfig; sourceTree = "<group>"; };
+		26EF51991D2D6655004E114B /* Debug-Tests.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Debug-Tests.xcconfig"; path = "Configs/Debug-Tests.xcconfig"; sourceTree = "<group>"; };
+		26EF519A1D2D6655004E114B /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = Configs/Debug.xcconfig; sourceTree = "<group>"; };
+		26EF519B1D2D6655004E114B /* Release-Tests.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Release-Tests.xcconfig"; path = "Configs/Release-Tests.xcconfig"; sourceTree = "<group>"; };
+		26EF519C1D2D6655004E114B /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Configs/Release.xcconfig; sourceTree = "<group>"; };
+		26EF519D1D2D6655004E114B /* Shared.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Shared.xcconfig; path = Configs/Shared.xcconfig; sourceTree = "<group>"; };
 		3104F0AFBB9EB980C0CB2EDF /* Pods-CoffUpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffUpTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoffUpTests/Pods-CoffUpTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6D7C3FEFE066362C7F766D38 /* Pods-CoffUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoffUp/Pods-CoffUp.release.xcconfig"; sourceTree = "<group>"; };
 		75D659B273870B7D84D92459 /* Pods-CoffUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoffUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoffUp/Pods-CoffUp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +88,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26EF51971D2D6616004E114B /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				26EF51981D2D6655004E114B /* Application.xcconfig */,
+				26EF51991D2D6655004E114B /* Debug-Tests.xcconfig */,
+				26EF519A1D2D6655004E114B /* Debug.xcconfig */,
+				26EF519B1D2D6655004E114B /* Release-Tests.xcconfig */,
+				26EF519C1D2D6655004E114B /* Release.xcconfig */,
+				26EF519D1D2D6655004E114B /* Shared.xcconfig */,
+			);
+			name = Configs;
+			sourceTree = "<group>";
+		};
 		4D0B73E671873C924CB1EE44 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +135,7 @@
 		9EA88AD51D1B4BBC00578652 /* CoffUp */ = {
 			isa = PBXGroup;
 			children = (
+				26EF51971D2D6616004E114B /* Configs */,
 				9E6285901D1BACBE00AE3B96 /* CoffUp.entitlements */,
 				9EA88AD61D1B4BBC00578652 /* AppDelegate.swift */,
 				9EA88AD81D1B4BBC00578652 /* ViewController.swift */,
@@ -409,138 +429,43 @@
 /* Begin XCBuildConfiguration section */
 		9EA88AF11D1B4BBC00578652 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26EF51981D2D6655004E114B /* Application.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		9EA88AF21D1B4BBC00578652 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26EF51981D2D6655004E114B /* Application.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		9EA88AF41D1B4BBC00578652 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75D659B273870B7D84D92459 /* Pods-CoffUp.debug.xcconfig */;
+			baseConfigurationReference = 26EF519A1D2D6655004E114B /* Debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = CoffUp/CoffUp.entitlements;
-				INFOPLIST_FILE = CoffUp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.thumbworks.CoffUp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		9EA88AF51D1B4BBC00578652 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D7C3FEFE066362C7F766D38 /* Pods-CoffUp.release.xcconfig */;
+			baseConfigurationReference = 26EF519C1D2D6655004E114B /* Release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = CoffUp/CoffUp.entitlements;
-				INFOPLIST_FILE = CoffUp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.thumbworks.CoffUp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 		9EA88AF71D1B4BBC00578652 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3104F0AFBB9EB980C0CB2EDF /* Pods-CoffUpTests.debug.xcconfig */;
+			baseConfigurationReference = 26EF51991D2D6655004E114B /* Debug-Tests.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = CoffUpTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.thumbworks.CoffUpTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoffUp.app/CoffUp";
 			};
 			name = Debug;
 		};
 		9EA88AF81D1B4BBC00578652 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D3B5CAAAE7E7A40988DADDD4 /* Pods-CoffUpTests.release.xcconfig */;
+			baseConfigurationReference = 26EF519B1D2D6655004E114B /* Release-Tests.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = CoffUpTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.thumbworks.CoffUpTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoffUp.app/CoffUp";
 			};
 			name = Release;
 		};
