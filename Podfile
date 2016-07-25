@@ -1,10 +1,9 @@
-# Uncomment this line to define a global platform for your project
-# platform :ios, '8.0'
+
+platform :ios, '8.0'
 use_frameworks!
 
-pod 'QuadratTouch', '>= 1.0'
-
 target 'CoffUp' do
+  pod 'QuadratTouch', '>= 1.0'
 end
 
 target 'CoffUpTests' do

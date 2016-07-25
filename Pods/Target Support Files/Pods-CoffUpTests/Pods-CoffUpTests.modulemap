@@ -1,6 +1,0 @@
-framework module Pods_CoffUpTests {
-  umbrella header "Pods-CoffUpTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
