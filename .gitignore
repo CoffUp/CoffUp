@@ -26,3 +26,15 @@ xcuserdata/
 *.moved-aside
 *.xccheckout
 *.xcscmblueprint
+
+### CocoaPods ###
+# CocoaPods
+#################
+
+Pods/
+
+### VSCode ###
+# VSCode
+##############
+
+.vscode/
