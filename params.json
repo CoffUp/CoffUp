@@ -1,6 +1,6 @@
 {
   "name": "SF Weekly Coffup",
   "tagline": "iOS Developers drinking Coffee/Tea in San Francisco",
-  "body": "## What is this?\r\n\r\nWe get together every Wednesday morning at 8:30am - 10:00am. The location changes every week, the best way to keep up to date on the location is through a dynamic ics file. \r\n\r\n## Instructions\r\nCopy and paste the following link into your calendar's \"subscription\" functionality **rather than downloading the static file**:\r\n\r\n `https://calendar.google.com/calendar/ical/ho60q57pauegr2ki4v9hhspvdo%40group.calendar.google.com/public/basic.ics`\r\n\r\nNow your calendar software should be up to date. If you see the same location every week, you've probably accidentally downloaded the static ics. You'll need to try again.",
+  "body": "## What is this?\r\n\r\nWe get together every Wednesday morning at 8:30am - 10:00am. The location changes every week, the best way to keep up to date on the location is through a dynamic ics file. \r\n\r\n## Instructions\r\nCopy and paste the following into your terminal\r\n\r\n osascript -e 'tell application "iCal" to GetURL "https://calendar.google.com/calendar/ical/ho60q57pauegr2ki4v9hhspvdo%40group.calendar.google.com/public/basic.ics"' \r\n\r\n Follow the prompts. Now your calendar software should be up to date. If you see the same location every week, you've probably accidentally downloaded the static ics. You'll need to try again.",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
